@@ -1,0 +1,95 @@
+/* */
+/* Customizing the css file and reflecting in the bs.css*/
+/* changing the primary color*/
+body {
+  margin-top: 105px; }
+
+.active, .navbar {
+  font-size: 1.5rem;
+  background-color: #1c0a82;
+  color: white !important;
+  padding-bottom: 2.0rem;
+  height: 105px; }
+
+#log {
+  position: relative;
+  margin-top: -7px; }
+
+/* Nesting is possible...nesting the navbar*/
+.navbar {
+  box-shadow: 2px 2px 5px #1c0a82;
+  opacity: 2.0;
+  background: #fff; }
+  .navbar .nav-item {
+    font-size: 1.4rem;
+    /* by default 16px*/
+    padding-right: 1.4rem; }
+  .navbar .nav-link {
+    padding-top: 2.0rem; }
+  .navbar .nav-item {
+    padding-bottom: 2.0rem;
+    height: 105px; }
+  .navbar #navbarCollapse {
+    background: #fff; }
+  .navbar .navbar-nav .nav-item .nav-link:hover {
+    background-color: rgba(23, 4, 130, 0.8);
+    padding-bottom: 2.0rem;
+    height: 105px;
+    color: white !important;
+    /*.nav-link:hover{
+     
+     background-color:rgba(23,4,130, 0.8);
+     color:white !important;
+     padding-bottom:2.0rem;
+    
+       
+     height:105px;
+     } */ }
+
+#showcase {
+  position: relative;
+  background: url("../img/mountain.jpg");
+  min-height: 600px; }
+  #showcase .primary-overlay {
+    /* When u want the child to cover fully d parent*/
+    background: rgba(23, 4, 130, 0.8);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+
+#authors .info-header {
+  width: 50%;
+  margin: auto;
+  border-bottom: 1px  darkgrey solid; }
+#authors img {
+  margin-top: -50px; }
+#authors .card:hover {
+  background: rgba(23, 4, 130, 0.8);
+  color: #fff; }
+#authors .fab {
+  color: #fff; }
+#authors .mb-respon {
+  margin-bottom: 1rem; }
+
+@media (max-width: 768px) {
+  #showcase {
+    min-height: 500px; }
+    #showcase h1 {
+      font-size: 4rem; }
+
+  .mb-resp {
+    margin-bottom: 1rem; } }
+@media (max-width: 768px) {
+  .navbar-nav {
+    width: 768px; }
+
+  .navbar-nav .nav-item .nav-link:hover {
+    background-color: rgba(23, 4, 130, 0.8);
+    padding-bottom: 2.0rem;
+    height: 105px;
+    width: 768px;
+    color: white !important; } }
+#about .card-header:hover {
+  background: rgba(23, 4, 130, 0.8);
+  color: #fff; }
